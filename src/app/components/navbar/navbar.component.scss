@@ -1,0 +1,50 @@
+.navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.751);
+  backdrop-filter: blur(10px);
+}
+
+.content-navbar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+
+    span {
+      color: var(--PrimaryColor);
+    }
+  }
+}
+
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+
+
+  a {
+    font-size: 16px;
+    color: var(--SecondaryColor);
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: var(--PrimaryColor);
+    }
+
+  }
+
+}
