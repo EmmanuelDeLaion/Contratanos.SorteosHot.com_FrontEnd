@@ -1,1 +1,150 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --PrimaryColor: #6C3CCF;
+  --SecondaryColor: #12141D;
+  --TertiaryColor: #302456;
+
+  --WhiteColor: #fff;
+  --GrayColor: #707070;
+  --lightColor: #aaa;
+
+  --SuccessColor: #1AD598;
+  --DangerColor: #E8083E;
+
+  --BackgroundColor: #F5F8FE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+
+  ::selection {
+    background: var(--PrimaryColor);
+    color: var(--WhiteColor);
+  }
+
+}
+
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+div,
+p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: var(--WhiteColor);
+}
+
+/*
+--------------
+  Buttons
+--------------
+*/
+.btn-color-primary-normal,
+.btn-color-primary-outline {
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+.btn-color-primary-normal {
+  background-color: var(--PrimaryColor);
+  color: var(--WhiteColor);
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid var(--PrimaryColor);
+    background-color: var(--WhiteColor);
+    color: var(--PrimaryColor);
+  }
+}
+
+
+.btn-color-primary-outline {
+  background-color: var(--WhiteColor);
+  color: var(--PrimaryColor);
+  border: 1px solid var(--PrimaryColor);
+
+  &:hover {
+    border: 1px solid var(--PrimaryColor);
+    background-color: var(--PrimaryColor);
+    color: var(--WhiteColor);
+  }
+}
+
+
+
+/*
+--------------
+  Textos
+--------------
+*/
+
+
+.p-small-gray-color,
+.p-small-primary-color {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.p-small-gray-color {
+  color: var(--GrayColor);
+}
+
+.p-small-primary-color {
+  color: var(--PrimaryColor);
+}
